@@ -4,7 +4,8 @@ phases:
     runtime-versions:
       java: openjdk8
     commands:
-      - apt-get update && apt-get install -y maven
+      - apt-get update
+      - apt-get install -y maven
   build:
     commands:
       - mvn clean package
